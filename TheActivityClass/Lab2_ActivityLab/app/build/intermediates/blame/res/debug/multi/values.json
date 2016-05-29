@@ -1,0 +1,201 @@
+[
+    {
+        "outputFile": "C:\\Users\\Louis\\Documents\\Projects\\coursera-android-labs\\TheActivityClass\\Lab2_ActivityLab\\app\\build\\intermediates\\res\\merged\\debug\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 48,
+                    "endOffset": 99
+                },
+                "from": {
+                    "file": "C:\\Users\\Louis\\Documents\\Projects\\coursera-android-labs\\TheActivityClass\\Lab2_ActivityLab\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 59,
+                        "endColumn": 48,
+                        "endOffset": 103
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 104,
+                    "endColumn": 53,
+                    "endOffset": 153
+                },
+                "from": {
+                    "file": "C:\\Users\\Louis\\Documents\\Projects\\coursera-android-labs\\TheActivityClass\\Lab2_ActivityLab\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 341,
+                        "endColumn": 53,
+                        "endOffset": 390
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 158,
+                    "endColumn": 48,
+                    "endOffset": 202
+                },
+                "from": {
+                    "file": "C:\\Users\\Louis\\Documents\\Projects\\coursera-android-labs\\TheActivityClass\\Lab2_ActivityLab\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 466,
+                        "endColumn": 48,
+                        "endOffset": 510
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 207,
+                    "endColumn": 56,
+                    "endOffset": 259
+                },
+                "from": {
+                    "file": "C:\\Users\\Louis\\Documents\\Projects\\coursera-android-labs\\TheActivityClass\\Lab2_ActivityLab\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 109,
+                        "endColumn": 56,
+                        "endOffset": 161
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 264,
+                    "endColumn": 58,
+                    "endOffset": 318
+                },
+                "from": {
+                    "file": "C:\\Users\\Louis\\Documents\\Projects\\coursera-android-labs\\TheActivityClass\\Lab2_ActivityLab\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 281,
+                        "endColumn": 58,
+                        "endOffset": 335
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 323,
+                    "endColumn": 56,
+                    "endOffset": 375
+                },
+                "from": {
+                    "file": "C:\\Users\\Louis\\Documents\\Projects\\coursera-android-labs\\TheActivityClass\\Lab2_ActivityLab\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 223,
+                        "endColumn": 56,
+                        "endOffset": 275
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 380,
+                    "endColumn": 54,
+                    "endOffset": 430
+                },
+                "from": {
+                    "file": "C:\\Users\\Louis\\Documents\\Projects\\coursera-android-labs\\TheActivityClass\\Lab2_ActivityLab\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 167,
+                        "endColumn": 54,
+                        "endOffset": 217
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 435,
+                    "endColumn": 68,
+                    "endOffset": 499
+                },
+                "from": {
+                    "file": "C:\\Users\\Louis\\Documents\\Projects\\coursera-android-labs\\TheActivityClass\\Lab2_ActivityLab\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 396,
+                        "endColumn": 68,
+                        "endOffset": 460
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 504,
+                    "endLine": 16,
+                    "endColumn": 12,
+                    "endOffset": 790
+                },
+                "from": {
+                    "file": "C:\\Users\\Louis\\Documents\\Projects\\coursera-android-labs\\TheActivityClass\\Lab2_ActivityLab\\app\\src\\main\\res\\values\\styles.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 192,
+                        "endLine": 12,
+                        "endColumn": 12,
+                        "endOffset": 484
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 17,
+                    "startColumn": 4,
+                    "startOffset": 795,
+                    "endLine": 19,
+                    "endColumn": 12,
+                    "endOffset": 950
+                },
+                "from": {
+                    "file": "C:\\Users\\Louis\\Documents\\Projects\\coursera-android-labs\\TheActivityClass\\Lab2_ActivityLab\\app\\src\\main\\res\\values\\styles.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 525,
+                        "endLine": 17,
+                        "endColumn": 12,
+                        "endOffset": 682
+                    }
+                }
+            }
+        ]
+    }
+]
