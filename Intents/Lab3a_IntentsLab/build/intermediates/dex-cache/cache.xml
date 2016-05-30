@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Louis\Documents\Projects\coursera-android-labs\Intents\Lab3a_IntentsLab\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="6b570368fc3836c0a52a62de2dc545e41717014a">
+        <dex dex="C:\Users\Louis\Documents\Projects\coursera-android-labs\Intents\Lab3a_IntentsLab\app\build\intermediates\pre-dexed\debug\instant-run_a0131448375c546b37a3e9186e7643f6494e7b3d.jar" />
+    </item>
+    <item
+        jar="C:\Users\Louis\Documents\Projects\coursera-android-labs\Intents\Lab3a_IntentsLab\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="a9ccc5bbd96894b27bc6f3b51f24459a557b42c9">
+        <dex dex="C:\Users\Louis\Documents\Projects\coursera-android-labs\Intents\Lab3a_IntentsLab\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_b903630925abfad59545581d7ea7c3445a755640.jar" />
+    </item>
+
+</items>
