@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\Users\\Louis\\Documents\\Projects\\coursera-android-labs\\UserInterface\\Lab4_UILabs\\app\\build\\intermediates\\res\\merged\\debug\\layout\\todo_item.xml",
+        "source": "C:\\Users\\Louis\\Documents\\Projects\\coursera-android-labs\\UserInterface\\Lab4_UILabs\\app\\src\\main\\res\\layout\\todo_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Louis\\Documents\\Projects\\coursera-android-labs\\UserInterface\\Lab4_UILabs\\app\\build\\intermediates\\res\\merged\\debug\\layout\\footer_view.xml",
+        "source": "C:\\Users\\Louis\\Documents\\Projects\\coursera-android-labs\\UserInterface\\Lab4_UILabs\\app\\src\\main\\res\\layout\\footer_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\Louis\\Documents\\Projects\\coursera-android-labs\\UserInterface\\Lab4_UILabs\\app\\build\\intermediates\\res\\merged\\debug\\layout\\add_todo.xml",
+        "source": "C:\\Users\\Louis\\Documents\\Projects\\coursera-android-labs\\UserInterface\\Lab4_UILabs\\app\\src\\main\\res\\layout\\add_todo.xml"
+    }
+]
