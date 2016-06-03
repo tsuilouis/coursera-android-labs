@@ -5,6 +5,7 @@ import java.util.List;
 
 import android.content.Context;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
@@ -82,27 +83,64 @@ public class ToDoListAdapter extends BaseAdapter {
 	
 	@Override
 	public View getView(int position, View convertView, ViewGroup parent) {
+		final ViewHolder holder;
 
 		// TODO - Get the current ToDoItem
-		final ToDoItem toDoItem = null;
+		final ToDoItem toDoItem = (ToDoItem) getItem(position);
 
 
 		// TODO - Inflate the View for this ToDoItem
 		// from todo_item.xml
-		RelativeLayout itemLayout = null;
+		RelativeLayout itemLayout = (RelativeLayout) convertView;
+
+		if (null == itemLayout) {
+			LayoutInflater inflater = (LayoutInflater) mContext.getSystemService(
+					Context.LAYOUT_INFLATER_SERVICE);
+			// don't attach to root Viewgroup, but why?
+			View toDoView = inflater.inflate(R.layout.todo_item, parent, false);
+
+			itemLayout = (RelativeLayout) toDoView.findViewById(R.id.RelativeLayout1);
+
+			// initialize some attributes
+			holder = new ViewHolder();
+			holder.titleView = (TextView) itemLayout.findViewById(R.id.titleView);
+			holder.statusView = (CheckBox) itemLayout.findViewById(R.id.statusCheckBox);
+			holder.priorityView = (TextView) itemLayout.findViewById(R.id.priorityView);
+			holder.dateView = (TextView) itemLayout.findViewById(R.id.dateView);
+			itemLayout.setTag(holder);
+
+		}
+		else {
+			holder = (ViewHolder) itemLayout.getTag();
+		}
+
 
 		// Fill in specific ToDoItem data
 		// Remember that the data that goes in this View
 		// corresponds to the user interface elements defined
 		// in the layout file
 
-		// TODO - Display Title in TextView
-		final TextView titleView = null;
 
+		// TODO - Display Title in TextView
+		final TextView titleView = holder.titleView;
+		titleView.setText(toDoItem.getTitle());
 
 		// TODO - Set up Status CheckBox
-		final CheckBox statusView = null;
+		final CheckBox statusView = holder.statusView;
 
+		switch(toDoItem.getStatus()) {
+			case NOTDONE: {
+				statusView.setChecked(false);
+				break; // spent far too long on this
+			}
+			case DONE: {
+				statusView.setChecked(true);
+				break;
+			}
+			default: {
+				break;
+			}
+		}
 
 		// TODO - Must also set up an OnCheckedChangeListener,
 		// which is called when the user toggles the status checkbox
@@ -112,26 +150,37 @@ public class ToDoListAdapter extends BaseAdapter {
 					public void onCheckedChanged(CompoundButton buttonView,
 							boolean isChecked) {
 
-
-
-                        
-                        
+						if (isChecked) {
+							toDoItem.setStatus(ToDoItem.Status.DONE);
+						}
+						else {
+							toDoItem.setStatus(ToDoItem.Status.NOTDONE);
+						}
                         
 					}
 				});
 
 		// TODO - Display Priority in a TextView
-		final TextView priorityView = null;
-
+		final TextView priorityView = holder.priorityView;
+		priorityView.setText(toDoItem.getPriority().toString());
 
 
 		// TODO - Display Time and Date.
 		// Hint - use ToDoItem.FORMAT.format(toDoItem.getDate()) to get date and
 		// time String
-		final TextView dateView = null;
+		final TextView dateView = holder.dateView;
+		dateView.setText(ToDoItem.FORMAT.format(toDoItem.getDate()));
 
 		// Return the View you just created
 		return itemLayout;
 
+	}
+
+	// store component views to avoid repeated use of findViewById()
+	static class ViewHolder {
+		TextView titleView;
+		CheckBox statusView;
+		TextView priorityView;
+		TextView dateView;
 	}
 }
