@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 import android.app.Activity;
@@ -29,16 +30,20 @@ public class DownloaderTaskFragment extends Fragment {
 		
 		// TODO: Create new DownloaderTask that "downloads" data
 
-        
+        DownloaderTask downloaderTask = new DownloaderTask();
 		
 		// TODO: Retrieve arguments from DownloaderTaskFragment
 		// Prepare them for use with DownloaderTask. 
 
-        
-        
+		ArrayList<Integer> friendIds = null;
+
+		Bundle args = getArguments();
+        if (args != null) {
+			friendIds = args.getIntegerArrayList(MainActivity.TAG_FRIEND_RES_IDS);
+		}
         
 		// TODO: Start the DownloaderTask 
-		
+		downloaderTask.execute(friendIds);
         
 
 	}
@@ -73,21 +78,28 @@ public class DownloaderTaskFragment extends Fragment {
 	// out). Ultimately, it must also pass newly available data back to 
 	// the hosting Activity using the DownloadFinishedListener interface.
 
-//	public class DownloaderTask extends ... {
-	
+ 	public class DownloaderTask extends AsyncTask<ArrayList<Integer>, Void, String[]> {
 
-    
-    
-    
-    
-    
-    
-    
-        // TODO: Uncomment this helper method
+
+		@Override
+		protected String[] doInBackground(ArrayList<Integer>... params) {
+			// convert IntegerArrayList to an Integer array
+			Integer[] resourceIDS = params[0].toArray(new Integer[0]);
+
+			return downloadTweets(resourceIDS);
+		}
+
+		@Override
+		protected void onPostExecute(String[] result) {
+			// let the main activity know that the data has been downloaded
+			mCallback.notifyDataRefreshed(result);
+		}
+
+		// TODO: Uncomment this helper method
 		// Simulates downloading Twitter data from the network
 
-        /*
-         private String[] downloadTweets(Integer resourceIDS[]) {
+
+		private String[] downloadTweets(Integer resourceIDS[]) {
 			final int simulatedDelay = 2000;
 			String[] feeds = new String[resourceIDS.length];
 			try {
@@ -124,14 +136,7 @@ public class DownloaderTaskFragment extends Fragment {
 
 			return feeds;
 		}
-         */
 
-
-    
-    
-    
-    
-    
-    
+	}
 
 }
