@@ -92,7 +92,9 @@ public class DownloaderTaskFragment extends Fragment {
 		@Override
 		protected void onPostExecute(String[] result) {
 			// let the main activity know that the data has been downloaded
-			mCallback.notifyDataRefreshed(result);
+			if (mCallback != null) {
+				mCallback.notifyDataRefreshed(result);
+			}
 		}
 
 		// TODO: Uncomment this helper method
